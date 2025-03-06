@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт</title>
+    <link rel="stylesheet" href="files/styles/style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="#about">О нас</a>
+                <a href="#services">Услуги</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <div class="nav-logo">
+                <img src="IMG_E0839.JPG" alt="">
+            </div>
+            <div class="nav-right">
+                <a href="tel">+38 (096) 535 78 24</a>
+            </div>
+            <!-- Бургер-меню -->
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- Меню для мобильных устройств -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#about">О нас</a>
+            <a href="#services">Услуги</a>
+            <a href="#contacts">Контакты</a>
+            <a href="tel">+38 (096) 535 78 24</a>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <img src="AZBVE7840.JPG" alt="Фон" class="bg-image">
+        <div>
+            <h1>Web Craft</h1>
+            <p>Ваш сайт, наша забота.</p>
+            <a href="#services" class="btn">Наши услуги</a>
+        </div>
+    </section>
+
+    <!-- Блок "О нас" -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Наша компания занимается предоставлением качественных услуг в сфере веб-разработки, дизайна и IT-решений.</p>
+        </div>
+    </section>
+
+    <!-- Блок "Услуги" с изображениями -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="service-item">
+                <img src="photo.jpg" alt="Услуга 1">
+                <h3>Разработка сайтов</h3>
+                <p>Создаём современные сайты с уникальным дизайном, которые эффективно решают задачи бизнеса.</p>
+            </div>
+            <div class="service-item">
+                <img src="photo.jpg" alt="Услуга 2">
+                <h3>Графический дизайн</h3>
+                <p>Логотипы, баннеры, презентации и другие графические элементы для вашего бизнеса.</p>
+            </div>
+            <div class="service-item">
+                <img src="photo.jpg" alt="Услуга 3">
+                <h3>SEO-продвижение</h3>
+                <p>Поможем вам вывести сайт на первые страницы поисковых систем, чтобы привлечь больше клиентов.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами по телефону или через почту:</p>
+            <p><strong>Телефон:</strong> +38 (096) 535 78 24</p>
+            <p><strong>Email:</strong> info@example.com</p>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        burger.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
